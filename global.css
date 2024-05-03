@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-epilogue: Epilogue;
+  --font-figma-hand: "Figma Hand";
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-xl: 20px;
+  --font-size-26xl: 45px;
+  --font-size-16xl: 35px;
+  --font-size-smi: 13px;
+  --font-size-11xl: 30px;
+  --font-size-mini: 15px;
+  --font-size-21xl: 40px;
+  --font-size-81xl: 100px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-3xs: 10px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslategray: #295554;
+  --color-darksalmon: #d77a61;
+  --color-gainsboro: rgba(217, 217, 217, 0.6);
+  --color-cadetblue: #61988e;
+  --color-gray-100: rgba(255, 255, 255, 0.84);
+  --color-silver: #a3bbad;
+  --color-black: #000;
+  --color-whitesmoke: #eff1f3;
+  --color-darkgray: #afafaf;
+  --color-lightgray: #dbd3d8;
+  --color-antiquewhite: #ffe7d4;
+
+  /* Gaps */
+  --gap-65xl: 84px;
+  --gap-3xs: 10px;
+  --gap-31xl: 50px;
+
+  /* Paddings */
+  --padding-93xl: 112px;
+  --padding-11xs: 2px;
+  --padding-8xs: 5px;
+  --padding-5xs: 8px;
+  --padding-mid-1: 17.1px;
+  --padding-31xl: 50px;
+
+  /* Border radiuses */
+  --br-lg: 18px;
+  --br-base: 16px;
+  --br-56xl-5: 75.5px;
+  --br-xl: 20px;
+  --br-5xs: 8px;
+  --br-2xs: 11px;
+}
