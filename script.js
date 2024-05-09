@@ -101,5 +101,10 @@ productButton.addEventListener('click', function(event) {
     categorySection.scrollIntoView({ behavior: 'smooth' });
 });
 
+document.getElementById('searchIcon').addEventListener('click', function() {
+    console.log('Image clicked');
+
+    window.location.href = 'view_products.php';
+});
 
 

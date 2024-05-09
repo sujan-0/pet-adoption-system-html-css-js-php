@@ -294,9 +294,9 @@
             <img class="vector-icon21" alt="" src="./public/vector.svg" />
           </a>
           <div class="home-parent">
-            <a class="home" href="/index.html">Home</a>
-            <a class="home" href="/buy.html">Adopt</a>
-            <a class="home" href="/view_products.php">Products</a>
+            <a class="home" href="index.html">Home</a>
+            <a class="home" href="buy.html">Adopt</a>
+            <a class="home" href="view_products.php">Products</a>
             <a class="home" href="/blog">Blog</a>
             <a class="home" onclick="redirectuserinquiry()">Inquiry?</a>
           </div>
@@ -309,15 +309,16 @@
               id="searchInput"
             />
             <img
+              id="searchIcon"
               class="iconamoonsearch-thin"
               alt="Search"
               src="./public/iconamoonsearchthin.svg"
-              onclick="searchProduct()"
             />
           </div>
-          <button class="shelter-wrapper" id="shelter">
+          <button class="shelter-wrapper" id="shelter" onclick="window.location.href='login.php'">
             <div class="shelter">Login</div>
-          </button>
+        </button>
+        
         </nav>
       </nav>
     <script src="script.js"></script>

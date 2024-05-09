@@ -58,7 +58,9 @@
 <body>
   <div class="navbar-container" id="nav">
     <nav class="navbar1" id="navbar">
-      <div class="home1">Home</div>
+    <a href="index.html">
+    <div class="home1">Home</div>
+</a>
       <div class="adopt3">Adopt</div>
       <div class="get-involved1">Get Involved</div>
       <div class="blog1">Blog</div>

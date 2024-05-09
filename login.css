@@ -272,6 +272,7 @@
   font-size: var(--font-size-6xl);
   font-family: var(--font-epilogue);
 }
+
 .frame-child5 {
   border: 1px solid var(--color-darkslategray);
   outline: 0;

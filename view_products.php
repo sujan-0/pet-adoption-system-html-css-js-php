@@ -31,7 +31,6 @@ $password = "";
 $dbname = "addproducts";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -46,12 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         addToCart($_POST['product_id']);
     } elseif (isset($_POST['remove_from_cart'])) {
         removeFromCart($_POST['remove_product_id']);
-    } elseif (isset($_POST['proceed_payment'])) {
-        header("Location: payment.php");
-        exit();
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,19 +142,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<p>Pet Price: $" . $row['price'] . "</p>";
             echo "<p>Compare Price: $" . $row['comparePrice'] . "</p>";
             echo "<img src='http://localhost/pet-adoption-system-html-css-js-php/images/" . $row['image'] . "' alt='Product Image'>";
-            // Modify the button to include an onclick event
-            echo "<button class='adopt-btn' onclick='redirectToPayment()'>Adopt Now!!!</button>";
+            // Modify the button to include an onclick event passing the product name
+            echo "<button onclick='redirectToPayment(\"" . $row['productName'] . "\", " . $row['price'] . ")' class='adopt-btn'>Adopt Now!!!</button>";
             echo "</div>";
+            
         }
         ?>
     </div>
     <script>
-        function redirectToPayment() {
-            window.location.href = "payment.html";
+        function redirectToPayment(productName, price) {
+            // Redirect to payment.php with the product name and price as query parameters
+            window.location.href = "payment.php?productName=" + encodeURIComponent(productName) + "&price=" + encodeURIComponent(price);
         }
     </script>
-
-
 </body>
 </html>
-
